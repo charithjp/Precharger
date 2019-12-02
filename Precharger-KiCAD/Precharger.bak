@@ -1,0 +1,219 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5DE48E84
+P 6400 6050
+F 0 "A?" H 6400 4961 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6400 4870 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 6550 5100 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6400 5050 50  0001 C CNN
+	1    6400 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Anderson_Powerpole:Anderson_PP45_Power_RA J?
+U 1 1 5DE513CC
+P 1500 1700
+F 0 "J?" H 1550 1750 50  0000 C CNN
+F 1 "Anderson_PP45_Power_RA" H 1400 1350 50  0000 C CNN
+F 2 "Anderson_Powerpole:Anderson_Powerpole-45A-RA-Bottom-Pair" H 1850 1300 50  0001 C CNN
+F 3 "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf" H 1900 2100 50  0001 C CNN
+	1    1500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Anderson_Powerpole:Anderson_PP45_Power_RA J?
+U 1 1 5DE520CF
+P 9000 1700
+F 0 "J?" H 9050 1750 50  0000 C CNN
+F 1 "Anderson_PP45_Power_RA" H 8900 1350 50  0000 C CNN
+F 2 "Anderson_Powerpole:Anderson_Powerpole-45A-RA-Bottom-Pair" H 9350 1300 50  0001 C CNN
+F 3 "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf" H 9400 2100 50  0001 C CNN
+	1    9000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE5316D
+P 2000 1900
+F 0 "#PWR?" H 2000 1650 50  0001 C CNN
+F 1 "GND" H 2005 1727 50  0000 C CNN
+F 2 "" H 2000 1900 50  0001 C CNN
+F 3 "" H 2000 1900 50  0001 C CNN
+	1    2000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE53B6C
+P 9500 1900
+F 0 "#PWR?" H 9500 1650 50  0001 C CNN
+F 1 "GND" H 9505 1727 50  0000 C CNN
+F 2 "" H 9500 1900 50  0001 C CNN
+F 3 "" H 9500 1900 50  0001 C CNN
+	1    9500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5DE548D1
+P 2000 1800
+F 0 "#PWR?" H 2000 1650 50  0001 C CNN
+F 1 "+BATT" H 2015 1973 50  0000 C CNN
+F 2 "" H 2000 1800 50  0001 C CNN
+F 3 "" H 2000 1800 50  0001 C CNN
+	1    2000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VSW #PWR?
+U 1 1 5DE54EF7
+P 9500 1800
+F 0 "#PWR?" H 9500 1650 50  0001 C CNN
+F 1 "+VSW" H 9515 1973 50  0000 C CNN
+F 2 "" H 9500 1800 50  0001 C CNN
+F 3 "" H 9500 1800 50  0001 C CNN
+	1    9500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:R-78HB5.0-0.5 U?
+U 1 1 5DE55D69
+P 3400 2950
+F 0 "U?" H 3400 3192 50  0000 C CNN
+F 1 "R-78HE5.0-0.3" H 3400 3101 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78HB-0.5_THT" H 3450 2700 50  0001 L CIN
+F 3 "https://www.recom-power.com/pdf/Innoline/R-78HBxx-0.5_L.pdf" H 3400 2950 50  0001 C CNN
+	1    3400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5DE572B0
+P 2150 2950
+F 0 "L?" V 2431 2950 50  0000 C CNN
+F 1 "68uH" V 2340 2950 50  0000 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 2150 2950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/taiyo-yuden/LBC3225T680KR/587-2432-1-ND/2230298" H 2150 2950 50  0001 C CNN
+F 4 "LBC3225T680KR" V 2249 2950 50  0000 C CNN "MFG_PN"
+	1    2150 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Polyfuse F?
+U 1 1 5DE589D2
+P 1350 2950
+F 0 "F?" V 1035 2950 50  0000 C CNN
+F 1 "Polyfuse" V 1126 2950 50  0000 C CNN
+F 2 "Fuse:Fuse_BelFuse_0ZRE0008FF_L8.3mm_W3.8mm" H 1400 2750 50  0001 L CNN
+F 3 "https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZRE0008FF1C/507-1349-ND/1560204" H 1350 2950 50  0001 C CNN
+F 4 "0ZRE0008FF1C" V 1217 2950 50  0000 C CNN "MFG_PN"
+	1    1350 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5DE5A003
+P 850 2850
+F 0 "#PWR?" H 850 2700 50  0001 C CNN
+F 1 "+BATT" H 865 3023 50  0000 C CNN
+F 2 "" H 850 2850 50  0001 C CNN
+F 3 "" H 850 2850 50  0001 C CNN
+	1    850  2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2950 1200 2950
+Wire Wire Line
+	850  2850 850  2950
+$Comp
+L Device:C C?
+U 1 1 5DE5D4E1
+P 2550 3100
+F 0 "C?" H 2665 3146 50  0000 L CNN
+F 1 "2.2uF" H 2665 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 2588 2950 50  0001 C CNN
+F 3 "~" H 2550 3100 50  0001 C CNN
+	1    2550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DE5DDB1
+P 1750 3100
+F 0 "C?" H 1865 3146 50  0000 L CNN
+F 1 "2.2uF" H 1865 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 1788 2950 50  0001 C CNN
+F 3 "~" H 1750 3100 50  0001 C CNN
+	1    1750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2950 2000 2950
+Wire Wire Line
+	2300 2950 2550 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5DE66EF1
+P 3400 3250
+F 0 "#PWR?" H 3400 3000 50  0001 C CNN
+F 1 "GND" H 3405 3077 50  0000 C CNN
+F 2 "" H 3400 3250 50  0001 C CNN
+F 3 "" H 3400 3250 50  0001 C CNN
+	1    3400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2950 1750 2950
+Connection ~ 1750 2950
+Wire Wire Line
+	2550 2950 3100 2950
+Connection ~ 2550 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5DE6793B
+P 2550 3250
+F 0 "#PWR?" H 2550 3000 50  0001 C CNN
+F 1 "GND" H 2555 3077 50  0000 C CNN
+F 2 "" H 2550 3250 50  0001 C CNN
+F 3 "" H 2550 3250 50  0001 C CNN
+	1    2550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE67DCF
+P 1750 3250
+F 0 "#PWR?" H 1750 3000 50  0001 C CNN
+F 1 "GND" H 1755 3077 50  0000 C CNN
+F 2 "" H 1750 3250 50  0001 C CNN
+F 3 "" H 1750 3250 50  0001 C CNN
+	1    1750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DE689E2
+P 4050 3100
+F 0 "C?" H 4165 3146 50  0000 L CNN
+F 1 "10uF" H 4165 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4088 2950 50  0001 C CNN
+F 3 "~" H 4050 3100 50  0001 C CNN
+	1    4050 3100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
