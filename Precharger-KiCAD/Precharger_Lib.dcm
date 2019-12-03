@@ -1,3 +1,20 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP CPC1004N
+D Form A, Solid State Relay (Photo MOSFET) 100V, 0.3A, 4Ohm, SO-4
+K MOSFET Output Photorelay 1-Form-A
+F http://www.ixysic.com/home/pdfs.nsf/www/CPC1004N.pdf/$file/CPC1004N.pdf
+$ENDCMP
+#
+$CMP SQJQ480E
+D 150A Id, 80V Vds, 3mOhm Rds, N-Channel MOSFET PowerPAK 8x8L
+K N-Channel MOSFET
+F https://www.vishay.com/docs/76718/sqjq480e.pdf
+$ENDCMP
+#
+$CMP VOM1271
+D Photovoltaic Driver with Integrated Fast Turn Off, SOP-4
+F http://www.vishay.com/docs/83469/vom1271t.pdf
+$ENDCMP
+#
 #End Doc Library

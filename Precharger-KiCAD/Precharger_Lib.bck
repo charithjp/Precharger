@@ -1,0 +1,44 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CPC1004N
+D Form A, Solid State Relay (Photo MOSFET) 100V, 0.3A, 4Ohm, SO-4
+K MOSFET Output Photorelay 1-Form-A
+F http://www.ixysic.com/home/pdfs.nsf/www/CPC1004N.pdf/$file/CPC1004N.pdf
+$ENDCMP
+#
+$CMP IRF7480M
+D 330A Id, 40V Vds, 1.2mOhm Rds, N-Channel MOSFET, DirectFET ME
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-IRF7480M-DS-v01_02-EN.pdf?fileId=5546d462533600a4015355ff8fa41c30
+$ENDCMP
+#
+$CMP IRF7486M
+D 209A Id, 40V Vds, 1.25mOhm Rds, N-Channel MOSFET, DirectFET ME
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-IRL7486M-DS-v01_00-EN.pdf?fileId=5546d46258fc0bc10158fec7a83a0629
+$ENDCMP
+#
+$CMP IRF7580M
+D 114A Id, 60V Vds, 3.6mOhm Rds, N-Channel MOSFET, DirectFET ME
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf7580mpbf.pdf?fileId=5546d462533600a401535603855c1c72
+$ENDCMP
+#
+$CMP IRF7780M
+D 89A Id, 75V Vds, 5.7mOhm Rds, N-Channel MOSFET, DirectFET ME
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf7780mpbf.pdf?fileId=5546d462533600a401535607b41f1cba
+$ENDCMP
+#
+$CMP SQJQ480E
+D 150A Id, 80V Vds, 3mOhm Rds, N-Channel MOSFET PowerPAK 8x8L
+K N-Channel MOSFET
+F https://www.vishay.com/docs/76718/sqjq480e.pdf
+$ENDCMP
+#
+$CMP VOM1271
+D Photovoltaic Driver with Integrated Fast Turn Off, SOP-4
+F http://www.vishay.com/docs/83469/vom1271t.pdf
+$ENDCMP
+#
+#End Doc Library
