@@ -424,12 +424,12 @@ $EndComp
 $Comp
 L Isolator:ISO7321C U6
 U 1 1 5DE96F08
-P 9100 6000
-F 0 "U6" H 9100 6467 50  0000 C CNN
-F 1 "ISO7321C" H 9100 6376 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9100 5650 50  0001 C CIN
-F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=iso7321c&fileType=pdf" H 9100 6000 50  0001 C CNN
-	1    9100 6000
+P 8900 6050
+F 0 "U6" H 8900 6517 50  0000 C CNN
+F 1 "ISO7321C" H 8900 6426 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8900 5700 50  0001 C CIN
+F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=iso7321c&fileType=pdf" H 8900 6050 50  0001 C CNN
+	1    8900 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -516,317 +516,254 @@ If = (5-1.4)/330 -> 11mA
 $Comp
 L Device:C C5
 U 1 1 5DE83521
-P 7800 5950
-F 0 "C5" H 7915 5996 50  0000 L CNN
-F 1 "100nF" H 7915 5905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7838 5800 50  0001 C CNN
-F 3 "~" H 7800 5950 50  0001 C CNN
-	1    7800 5950
+P 7600 6000
+F 0 "C5" H 7715 6046 50  0000 L CNN
+F 1 "100nF" H 7715 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7638 5850 50  0001 C CNN
+F 3 "~" H 7600 6000 50  0001 C CNN
+	1    7600 6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0122
 U 1 1 5DE83527
-P 7800 5800
-F 0 "#PWR0122" H 7800 5650 50  0001 C CNN
-F 1 "+5V" H 7815 5973 50  0000 C CNN
-F 2 "" H 7800 5800 50  0001 C CNN
-F 3 "" H 7800 5800 50  0001 C CNN
-	1    7800 5800
+P 7600 5850
+F 0 "#PWR0122" H 7600 5700 50  0001 C CNN
+F 1 "+5V" H 7615 6023 50  0000 C CNN
+F 2 "" H 7600 5850 50  0001 C CNN
+F 3 "" H 7600 5850 50  0001 C CNN
+	1    7600 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0123
 U 1 1 5DE8352D
-P 7800 6100
-F 0 "#PWR0123" H 7800 5850 50  0001 C CNN
-F 1 "GND" H 7805 5927 50  0000 C CNN
-F 2 "" H 7800 6100 50  0001 C CNN
-F 3 "" H 7800 6100 50  0001 C CNN
-	1    7800 6100
+P 7600 6150
+F 0 "#PWR0123" H 7600 5900 50  0001 C CNN
+F 1 "GND" H 7605 5977 50  0000 C CNN
+F 2 "" H 7600 6150 50  0001 C CNN
+F 3 "" H 7600 6150 50  0001 C CNN
+	1    7600 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0124
 U 1 1 5DE85AC9
-P 8600 5750
-F 0 "#PWR0124" H 8600 5600 50  0001 C CNN
-F 1 "+5V" H 8615 5923 50  0000 C CNN
-F 2 "" H 8600 5750 50  0001 C CNN
-F 3 "" H 8600 5750 50  0001 C CNN
-	1    8600 5750
+P 8400 5800
+F 0 "#PWR0124" H 8400 5650 50  0001 C CNN
+F 1 "+5V" H 8415 5973 50  0000 C CNN
+F 2 "" H 8400 5800 50  0001 C CNN
+F 3 "" H 8400 5800 50  0001 C CNN
+	1    8400 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 5750 8600 5800
+	8400 5800 8400 5850
 Wire Wire Line
-	8600 5800 8700 5800
+	8400 5850 8500 5850
 $Comp
 L power:GND #PWR0125
 U 1 1 5DE8A17C
-P 8700 5900
-F 0 "#PWR0125" H 8700 5650 50  0001 C CNN
-F 1 "GND" H 8705 5727 50  0000 C CNN
-F 2 "" H 8700 5900 50  0001 C CNN
-F 3 "" H 8700 5900 50  0001 C CNN
-	1    8700 5900
+P 8500 5950
+F 0 "#PWR0125" H 8500 5700 50  0001 C CNN
+F 1 "GND" H 8505 5777 50  0000 C CNN
+F 2 "" H 8500 5950 50  0001 C CNN
+F 3 "" H 8500 5950 50  0001 C CNN
+	1    8500 5950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8700 6100 8250 6100
+	8500 6150 8050 6150
 Wire Wire Line
-	8700 6200 8250 6200
-Text Label 8250 6100 0    50   ~ 0
+	8500 6250 8050 6250
+Text Label 8050 6150 0    50   ~ 0
 EXT_RX
-Text Label 8250 6200 0    50   ~ 0
+Text Label 8050 6250 0    50   ~ 0
 EXT_TX
 Wire Wire Line
-	4850 1250 5000 1250
+	4650 1250 4500 1250
 Wire Wire Line
-	5000 1250 5000 1150
+	4500 1250 4500 1150
 $Comp
 L power:+VSW #PWR0127
 U 1 1 5DEAB153
-P 5000 1150
-F 0 "#PWR0127" H 5000 1000 50  0001 C CNN
-F 1 "+VSW" H 5015 1323 50  0000 C CNN
-F 2 "" H 5000 1150 50  0001 C CNN
-F 3 "" H 5000 1150 50  0001 C CNN
-	1    5000 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Breakout_Board:Connector_Screw_Terminal_01x05 J1
-U 1 1 5DEB84CE
-P 10150 6050
-F 0 "J1" H 10230 6092 50  0000 L CNN
-F 1 "Connector_Screw_Terminal_01x05" H 10230 6001 50  0000 L CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_5-G-3.5_1x05_P3.50mm_Vertical" H 10150 6050 50  0001 C CNN
-F 3 "" H 10150 6050 50  0001 C CNN
-	1    10150 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5DEB2BC4
-P 4650 5300
-F 0 "TP2" V 4650 5550 50  0000 C CNN
-F 1 "TestPoint" H 4708 5327 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4850 5300 50  0001 C CNN
-F 3 "~" H 4850 5300 50  0001 C CNN
-	1    4650 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5DEB21EC
-P 4650 5200
-F 0 "TP1" V 4650 5450 50  0000 C CNN
-F 1 "TestPoint" H 4708 5227 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4850 5200 50  0001 C CNN
-F 3 "~" H 4850 5200 50  0001 C CNN
-	1    4650 5200
-	0    -1   -1   0   
+P 4500 1150
+F 0 "#PWR0127" H 4500 1000 50  0001 C CNN
+F 1 "+VSW" H 4515 1323 50  0000 C CNN
+F 2 "" H 4500 1150 50  0001 C CNN
+F 3 "" H 4500 1150 50  0001 C CNN
+	1    4500 1150
+	-1   0    0    -1  
 $EndComp
 Text Label 6250 1650 0    50   ~ 0
 ~CLOSE
 Wire Wire Line
 	6700 1650 6250 1650
-Text Label 4650 5300 0    50   ~ 0
-~CLOSE
-Text Label 4650 5200 0    50   ~ 0
-~PRECHARGE
-Wire Wire Line
-	5100 5300 4650 5300
-Wire Wire Line
-	5100 5200 4650 5200
-$Comp
-L Jumper:SolderJumper_2_Bridged JP6
-U 1 1 5DE99CDD
-P 5250 5300
-F 0 "JP6" H 5250 5413 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 5250 5414 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5250 5300 50  0001 C CNN
-F 3 "~" H 5250 5300 50  0001 C CNN
-	1    5250 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP5
-U 1 1 5DE99902
-P 5250 5200
-F 0 "JP5" H 5250 5313 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 5250 5314 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5250 5200 50  0001 C CNN
-F 3 "~" H 5250 5200 50  0001 C CNN
-	1    5250 5200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5DE96F36
-P 6000 3800
-F 0 "TP4" V 6000 4000 50  0000 L CNN
-F 1 "TestPoint" H 6058 3827 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 6200 3800 50  0001 C CNN
-F 3 "~" H 6200 3800 50  0001 C CNN
-	1    6000 3800
+P 6900 3250
+F 0 "TP4" V 6900 3450 50  0000 L CNN
+F 1 "TestPoint" H 6958 3277 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 7100 3250 50  0001 C CNN
+F 3 "~" H 7100 3250 50  0001 C CNN
+	1    6900 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP2
 U 1 1 5DE96D3A
-P 5250 4300
-F 0 "JP2" H 5250 4505 50  0001 C CNN
-F 1 "SolderJumper_2_Open" H 5250 4414 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5250 4300 50  0001 C CNN
-F 3 "~" H 5250 4300 50  0001 C CNN
-	1    5250 4300
+P 6150 3750
+F 0 "JP2" H 6150 3955 50  0001 C CNN
+F 1 "SolderJumper_2_Open" H 6150 3864 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6150 3750 50  0001 C CNN
+F 3 "~" H 6150 3750 50  0001 C CNN
+	1    6150 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5DE96668
-P 5250 4200
-F 0 "JP1" H 5250 4405 50  0001 C CNN
-F 1 "SolderJumper_2_Open" H 5250 4314 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5250 4200 50  0001 C CNN
-F 3 "~" H 5250 4200 50  0001 C CNN
-	1    5250 4200
+P 6150 3650
+F 0 "JP1" H 6150 3855 50  0001 C CNN
+F 1 "SolderJumper_2_Open" H 6150 3764 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6150 3650 50  0001 C CNN
+F 3 "~" H 6150 3650 50  0001 C CNN
+	1    6150 3650
 	1    0    0    -1  
 $EndComp
-Text Label 4650 4700 0    50   ~ 0
+Text Label 5550 4150 0    50   ~ 0
 EXT_TX
-Text Label 4650 4600 0    50   ~ 0
+Text Label 5550 4050 0    50   ~ 0
 EXT_RX
 Wire Wire Line
-	5100 4700 4650 4700
+	6000 4150 5550 4150
 Wire Wire Line
-	5100 4600 4650 4600
-Text Label 4650 4300 0    50   ~ 0
+	6000 4050 5550 4050
+Text Label 5550 3750 0    50   ~ 0
 EXT_TX
-Text Label 4650 4200 0    50   ~ 0
+Text Label 5550 3650 0    50   ~ 0
 EXT_RX
 Wire Wire Line
-	5100 4300 4650 4300
+	6000 3750 5550 3750
 Wire Wire Line
-	5100 4200 4650 4200
+	6000 3650 5550 3650
 $Comp
 L Jumper:SolderJumper_2_Bridged JP4
 U 1 1 5DE8F8F2
-P 5250 4700
-F 0 "JP4" H 5250 4813 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 5250 4814 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5250 4700 50  0001 C CNN
-F 3 "~" H 5250 4700 50  0001 C CNN
-	1    5250 4700
+P 6150 4150
+F 0 "JP4" H 6150 4263 50  0001 C CNN
+F 1 "SolderJumper_2_Bridged" H 6150 4264 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4150 50  0001 C CNN
+F 3 "~" H 6150 4150 50  0001 C CNN
+	1    6150 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP3
 U 1 1 5DE8EB88
-P 5250 4600
-F 0 "JP3" H 5250 4713 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 5250 4714 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5250 4600 50  0001 C CNN
-F 3 "~" H 5250 4600 50  0001 C CNN
-	1    5250 4600
+P 6150 4050
+F 0 "JP3" H 6150 4163 50  0001 C CNN
+F 1 "SolderJumper_2_Bridged" H 6150 4164 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4050 50  0001 C CNN
+F 3 "~" H 6150 4050 50  0001 C CNN
+	1    6150 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0129
 U 1 1 5DE769CE
-P 5100 3750
-F 0 "#PWR0129" H 5100 3500 50  0001 C CNN
-F 1 "GND" H 5105 3577 50  0000 C CNN
-F 2 "" H 5100 3750 50  0001 C CNN
-F 3 "" H 5100 3750 50  0001 C CNN
-	1    5100 3750
+P 6000 3200
+F 0 "#PWR0129" H 6000 2950 50  0001 C CNN
+F 1 "GND" H 6005 3027 50  0000 C CNN
+F 2 "" H 6000 3200 50  0001 C CNN
+F 3 "" H 6000 3200 50  0001 C CNN
+	1    6000 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0130
 U 1 1 5DE769C8
-P 5100 3450
-F 0 "#PWR0130" H 5100 3300 50  0001 C CNN
-F 1 "+5V" H 5115 3623 50  0000 C CNN
-F 2 "" H 5100 3450 50  0001 C CNN
-F 3 "" H 5100 3450 50  0001 C CNN
-	1    5100 3450
+P 6000 2900
+F 0 "#PWR0130" H 6000 2750 50  0001 C CNN
+F 1 "+5V" H 6015 3073 50  0000 C CNN
+F 2 "" H 6000 2900 50  0001 C CNN
+F 3 "" H 6000 2900 50  0001 C CNN
+	1    6000 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 5DE769C2
-P 5100 3600
-F 0 "C4" H 5215 3646 50  0000 L CNN
-F 1 "10uF" H 5215 3555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5138 3450 50  0001 C CNN
-F 3 "~" H 5100 3600 50  0001 C CNN
-	1    5100 3600
+P 6000 3050
+F 0 "C4" H 6115 3096 50  0000 L CNN
+F 1 "10uF" H 6115 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6038 2900 50  0001 C CNN
+F 3 "~" H 6000 3050 50  0001 C CNN
+	1    6000 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5DE71AED
-P 5800 3800
-F 0 "TP3" V 5800 4000 50  0000 L CNN
-F 1 "TestPoint" H 5858 3827 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 6000 3800 50  0001 C CNN
-F 3 "~" H 6000 3800 50  0001 C CNN
-	1    5800 3800
+P 6700 3250
+F 0 "TP3" V 6700 3450 50  0000 L CNN
+F 1 "TestPoint" H 6758 3277 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 6900 3250 50  0001 C CNN
+F 3 "~" H 6900 3250 50  0001 C CNN
+	1    6700 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP8
 U 1 1 5DE704EF
-P 6550 4900
-F 0 "JP8" H 6700 4800 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 6550 5014 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6550 4900 50  0001 C CNN
-F 3 "~" H 6550 4900 50  0001 C CNN
-	1    6550 4900
+P 7450 4350
+F 0 "JP8" H 7600 4250 50  0001 C CNN
+F 1 "SolderJumper_2_Bridged" H 7450 4464 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 7450 4350 50  0001 C CNN
+F 3 "~" H 7450 4350 50  0001 C CNN
+	1    7450 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP7
 U 1 1 5DE6FC2D
-P 6550 4800
-F 0 "JP7" H 6550 4913 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 6550 4914 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6550 4800 50  0001 C CNN
-F 3 "~" H 6550 4800 50  0001 C CNN
-	1    6550 4800
+P 7450 4250
+F 0 "JP7" H 7450 4363 50  0001 C CNN
+F 1 "SolderJumper_2_Bridged" H 7450 4364 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 7450 4250 50  0001 C CNN
+F 3 "~" H 7450 4250 50  0001 C CNN
+	1    7450 4250
 	1    0    0    -1  
 $EndComp
-Text Label 6750 4900 0    50   ~ 0
+Text Label 7650 4350 0    50   ~ 0
 DIV_BUFF_VSW
-Text Label 6750 4800 0    50   ~ 0
+Text Label 7650 4250 0    50   ~ 0
 DIV_BUFF_VBATT
 Wire Wire Line
-	6700 4900 7350 4900
+	7600 4350 8250 4350
 Wire Wire Line
-	6700 4800 7350 4800
+	7600 4250 8250 4250
 $Comp
 L power:+5V #PWR0131
 U 1 1 5DE86DDB
-P 6100 3800
-F 0 "#PWR0131" H 6100 3650 50  0001 C CNN
-F 1 "+5V" H 6115 3973 50  0000 C CNN
-F 2 "" H 6100 3800 50  0001 C CNN
-F 3 "" H 6100 3800 50  0001 C CNN
-	1    6100 3800
+P 7000 3250
+F 0 "#PWR0131" H 7000 3100 50  0001 C CNN
+F 1 "+5V" H 7015 3423 50  0000 C CNN
+F 2 "" H 7000 3250 50  0001 C CNN
+F 3 "" H 7000 3250 50  0001 C CNN
+	1    7000 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5DE48E84
-P 5900 4800
-F 0 "A1" H 6350 5850 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 6650 5750 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 6050 3850 50  0001 L CNN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5900 3800 50  0001 C CNN
-	1    5900 4800
+P 6800 4250
+F 0 "A1" H 7250 5300 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 7550 5200 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 6950 3300 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6800 3250 50  0001 C CNN
+	1    6800 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -874,61 +811,61 @@ F 3 "" H 1750 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 1250 4400 1450
-Connection ~ 4400 1250
+	5100 1250 5100 1450
+Connection ~ 5100 1250
 Wire Wire Line
-	4650 1250 4400 1250
+	4850 1250 5100 1250
 Wire Wire Line
-	3800 1300 3800 1450
-Connection ~ 3800 1300
+	5700 1300 5700 1450
+Connection ~ 5700 1300
 Wire Wire Line
-	3600 1300 3800 1300
+	5900 1300 5700 1300
 Wire Wire Line
-	3600 1150 3600 1300
+	5900 1150 5900 1300
 $Comp
 L power:+BATT #PWR0126
 U 1 1 5DEA678C
-P 3600 1150
-F 0 "#PWR0126" H 3600 1000 50  0001 C CNN
-F 1 "+BATT" H 3615 1323 50  0000 C CNN
-F 2 "" H 3600 1150 50  0001 C CNN
-F 3 "" H 3600 1150 50  0001 C CNN
-	1    3600 1150
-	1    0    0    -1  
+P 5900 1150
+F 0 "#PWR0126" H 5900 1000 50  0001 C CNN
+F 1 "+BATT" H 5915 1323 50  0000 C CNN
+F 2 "" H 5900 1150 50  0001 C CNN
+F 3 "" H 5900 1150 50  0001 C CNN
+	1    5900 1150
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 1450 4250 1450
+	5100 1450 5250 1450
 Wire Wire Line
-	4400 1100 4400 1250
+	5100 1100 5100 1250
 Wire Wire Line
-	4250 1100 4400 1100
+	5250 1100 5100 1100
 Wire Wire Line
-	3800 1450 3950 1450
+	5700 1450 5550 1450
 Wire Wire Line
-	3800 1100 3800 1300
+	5700 1100 5700 1300
 Wire Wire Line
-	3950 1100 3800 1100
+	5550 1100 5700 1100
 $Comp
 L Device:R R8
 U 1 1 5DE9E4A2
-P 4100 1450
-F 0 "R8" V 3893 1450 50  0000 C CNN
-F 1 "470R 5W" V 3984 1450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 4030 1450 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 4100 1450 50  0001 C CNN
-	1    4100 1450
-	0    1    1    0   
+P 5400 1450
+F 0 "R8" V 5193 1450 50  0000 C CNN
+F 1 "470R 5W" V 5284 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 5330 1450 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 5400 1450 50  0001 C CNN
+	1    5400 1450
+	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5DE9C7FD
-P 4100 1100
-F 0 "R7" V 3893 1100 50  0000 C CNN
-F 1 "470R 5W" V 3984 1100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 4030 1100 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 4100 1100 50  0001 C CNN
-	1    4100 1100
-	0    1    1    0   
+P 5400 1100
+F 0 "R7" V 5193 1100 50  0000 C CNN
+F 1 "470R 5W" V 5284 1100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 5330 1100 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 5400 1100 50  0001 C CNN
+	1    5400 1100
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	5150 1850 5700 1850
@@ -971,4 +908,221 @@ F 3 "http://www.ixysic.com/home/pdfs.nsf/www/CPC1004N.pdf/$file/CPC1004N.pdf" H 
 	1    4750 1550
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	10750 5950 10750 5850
+Wire Wire Line
+	10750 5850 9300 5850
+Wire Wire Line
+	9300 5950 9750 5950
+Text Label 9350 5950 0    50   ~ 0
+ISO_GND
+Text Label 9350 5850 0    50   ~ 0
+ISO_VCC
+Wire Wire Line
+	10300 6250 10750 6250
+Text Label 10350 6250 0    50   ~ 0
+ISO_GND
+Wire Wire Line
+	10750 6050 9500 6050
+Wire Wire Line
+	9500 6050 9500 6150
+Wire Wire Line
+	9500 6150 9300 6150
+Wire Wire Line
+	10750 6150 9600 6150
+Wire Wire Line
+	9600 6150 9600 6250
+Wire Wire Line
+	9600 6250 9300 6250
+Text Label 9700 6050 0    50   ~ 0
+ISO_RX
+Text Label 9700 6150 0    50   ~ 0
+ISO_TX
+$Comp
+L Connector:Screw_Terminal_01x04 J1
+U 1 1 5DE6C855
+P 10950 6150
+F 0 "J1" H 10900 5850 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" V 11050 5900 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 10950 6150 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/phoenix-contact/1984633/277-1860-ND/768668" H 10950 6150 50  0001 C CNN
+	1    10950 6150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5DEA8E05
+P 10600 5400
+F 0 "C6" H 10715 5446 50  0000 L CNN
+F 1 "100nF" H 10715 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10638 5250 50  0001 C CNN
+F 3 "~" H 10600 5400 50  0001 C CNN
+	1    10600 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 5650 11050 5650
+Text Label 10650 5650 0    50   ~ 0
+ISO_GND
+Wire Wire Line
+	10600 5550 10600 5650
+Text Label 10650 5150 0    50   ~ 0
+ISO_VCC
+Wire Wire Line
+	10600 5250 10600 5150
+Wire Wire Line
+	10600 5150 11050 5150
+$Comp
+L power:GND #PWR0132
+U 1 1 5DEE6CD7
+P 6800 5250
+F 0 "#PWR0132" H 6800 5000 50  0001 C CNN
+F 1 "GND" V 6805 5077 50  0000 C CNN
+F 2 "" H 6800 5250 50  0001 C CNN
+F 3 "" H 6800 5250 50  0001 C CNN
+	1    6800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 5DEE8A16
+P 6900 5250
+F 0 "#PWR0133" H 6900 5000 50  0001 C CNN
+F 1 "GND" V 6905 5077 50  0000 C CNN
+F 2 "" H 6900 5250 50  0001 C CNN
+F 3 "" H 6900 5250 50  0001 C CNN
+	1    6900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:ASMB-MTB1-0A3A2 D1
+U 1 1 5DF05706
+P 10000 3350
+F 0 "D1" V 10046 2970 50  0000 R CNN
+F 1 "ASMB-MTB1-0A3A2" V 9955 2970 50  0000 R CNN
+F 2 "LED_SMD:LED_Avago_PLCC4_3.2x2.8mm_CW" H 10000 3950 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-4194EN" H 10000 2900 50  0001 C CNN
+	1    10000 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5DF0AAC8
+P 5550 4950
+F 0 "TP2" V 5550 5200 50  0000 C CNN
+F 1 "TestPoint" H 5608 4977 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 5750 4950 50  0001 C CNN
+F 3 "~" H 5750 4950 50  0001 C CNN
+	1    5550 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DF0AACE
+P 5550 4850
+F 0 "TP1" V 5550 5100 50  0000 C CNN
+F 1 "TestPoint" H 5608 4877 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 5750 4850 50  0001 C CNN
+F 3 "~" H 5750 4850 50  0001 C CNN
+	1    5550 4850
+	0    -1   -1   0   
+$EndComp
+Text Label 5550 4950 0    50   ~ 0
+~CLOSE
+Text Label 5550 4850 0    50   ~ 0
+~PRECHARGE
+Wire Wire Line
+	6000 4950 5550 4950
+Wire Wire Line
+	6000 4850 5550 4850
+$Comp
+L Jumper:SolderJumper_2_Bridged JP6
+U 1 1 5DF0AAD8
+P 6150 4950
+F 0 "JP6" H 6150 5063 50  0001 C CNN
+F 1 "SolderJumper_2_Bridged" H 6150 5064 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4950 50  0001 C CNN
+F 3 "~" H 6150 4950 50  0001 C CNN
+	1    6150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP5
+U 1 1 5DF0AADE
+P 6150 4850
+F 0 "JP5" H 6150 4963 50  0001 C CNN
+F 1 "SolderJumper_2_Bridged" H 6150 4964 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4850 50  0001 C CNN
+F 3 "~" H 6150 4850 50  0001 C CNN
+	1    6150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0134
+U 1 1 5DF10B14
+P 10000 3150
+F 0 "#PWR0134" H 10000 3000 50  0001 C CNN
+F 1 "+5V" H 10015 3323 50  0000 C CNN
+F 2 "" H 10000 3150 50  0001 C CNN
+F 3 "" H 10000 3150 50  0001 C CNN
+	1    10000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5DF11AB1
+P 9800 3700
+F 0 "R11" V 9850 3900 50  0000 L CNN
+F 1 "150R" V 9870 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9730 3700 50  0001 C CNN
+F 3 "~" H 9800 3700 50  0001 C CNN
+	1    9800 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5DF18EBE
+P 10000 3700
+F 0 "R12" V 10050 3900 50  0000 L CNN
+F 1 "100R" V 10070 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9930 3700 50  0001 C CNN
+F 3 "~" H 10000 3700 50  0001 C CNN
+	1    10000 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5DF1A20D
+P 10200 3700
+F 0 "R13" V 10250 3900 50  0000 L CNN
+F 1 "100R" V 10270 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10130 3700 50  0001 C CNN
+F 3 "~" H 10200 3700 50  0001 C CNN
+	1    10200 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9800 3850 9800 4300
+Text Label 9800 4300 1    50   ~ 0
+LED_R
+Wire Wire Line
+	10000 3850 10000 4300
+Text Label 10000 4300 1    50   ~ 0
+LED_G
+Wire Wire Line
+	10200 3850 10200 4300
+Text Label 10200 4300 1    50   ~ 0
+LED_B
+Wire Wire Line
+	6300 4550 5850 4550
+Text Label 5850 4550 0    50   ~ 0
+LED_R
+Wire Wire Line
+	6300 4650 5850 4650
+Text Label 5850 4650 0    50   ~ 0
+LED_G
+Wire Wire Line
+	6300 4750 5850 4750
+Text Label 5850 4750 0    50   ~ 0
+LED_B
 $EndSCHEMATC
