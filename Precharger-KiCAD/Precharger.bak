@@ -581,19 +581,19 @@ EXT_RX
 Text Label 8050 6250 0    50   ~ 0
 EXT_TX
 Wire Wire Line
-	4850 1250 5000 1250
+	4650 1250 4500 1250
 Wire Wire Line
-	5000 1250 5000 1150
+	4500 1250 4500 1150
 $Comp
 L power:+VSW #PWR0127
 U 1 1 5DEAB153
-P 5000 1150
-F 0 "#PWR0127" H 5000 1000 50  0001 C CNN
-F 1 "+VSW" H 5015 1323 50  0000 C CNN
-F 2 "" H 5000 1150 50  0001 C CNN
-F 3 "" H 5000 1150 50  0001 C CNN
-	1    5000 1150
-	1    0    0    -1  
+P 4500 1150
+F 0 "#PWR0127" H 4500 1000 50  0001 C CNN
+F 1 "+VSW" H 4515 1323 50  0000 C CNN
+F 2 "" H 4500 1150 50  0001 C CNN
+F 3 "" H 4500 1150 50  0001 C CNN
+	1    4500 1150
+	-1   0    0    -1  
 $EndComp
 Text Label 6250 1650 0    50   ~ 0
 ~CLOSE
@@ -811,61 +811,61 @@ F 3 "" H 1750 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 1250 4400 1450
-Connection ~ 4400 1250
+	5100 1250 5100 1450
+Connection ~ 5100 1250
 Wire Wire Line
-	4650 1250 4400 1250
+	4850 1250 5100 1250
 Wire Wire Line
-	3800 1300 3800 1450
-Connection ~ 3800 1300
+	5700 1300 5700 1450
+Connection ~ 5700 1300
 Wire Wire Line
-	3600 1300 3800 1300
+	5900 1300 5700 1300
 Wire Wire Line
-	3600 1150 3600 1300
+	5900 1150 5900 1300
 $Comp
 L power:+BATT #PWR0126
 U 1 1 5DEA678C
-P 3600 1150
-F 0 "#PWR0126" H 3600 1000 50  0001 C CNN
-F 1 "+BATT" H 3615 1323 50  0000 C CNN
-F 2 "" H 3600 1150 50  0001 C CNN
-F 3 "" H 3600 1150 50  0001 C CNN
-	1    3600 1150
-	1    0    0    -1  
+P 5900 1150
+F 0 "#PWR0126" H 5900 1000 50  0001 C CNN
+F 1 "+BATT" H 5915 1323 50  0000 C CNN
+F 2 "" H 5900 1150 50  0001 C CNN
+F 3 "" H 5900 1150 50  0001 C CNN
+	1    5900 1150
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 1450 4250 1450
+	5100 1450 5250 1450
 Wire Wire Line
-	4400 1100 4400 1250
+	5100 1100 5100 1250
 Wire Wire Line
-	4250 1100 4400 1100
+	5250 1100 5100 1100
 Wire Wire Line
-	3800 1450 3950 1450
+	5700 1450 5550 1450
 Wire Wire Line
-	3800 1100 3800 1300
+	5700 1100 5700 1300
 Wire Wire Line
-	3950 1100 3800 1100
+	5550 1100 5700 1100
 $Comp
 L Device:R R8
 U 1 1 5DE9E4A2
-P 4100 1450
-F 0 "R8" V 3893 1450 50  0000 C CNN
-F 1 "470R 5W" V 3984 1450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 4030 1450 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 4100 1450 50  0001 C CNN
-	1    4100 1450
-	0    1    1    0   
+P 5400 1450
+F 0 "R8" V 5193 1450 50  0000 C CNN
+F 1 "470R 5W" V 5284 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 5330 1450 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 5400 1450 50  0001 C CNN
+	1    5400 1450
+	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5DE9C7FD
-P 4100 1100
-F 0 "R7" V 3893 1100 50  0000 C CNN
-F 1 "470R 5W" V 3984 1100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 4030 1100 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 4100 1100 50  0001 C CNN
-	1    4100 1100
-	0    1    1    0   
+P 5400 1100
+F 0 "R7" V 5193 1100 50  0000 C CNN
+F 1 "470R 5W" V 5284 1100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 5330 1100 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 5400 1100 50  0001 C CNN
+	1    5400 1100
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	5150 1850 5700 1850
@@ -888,7 +888,7 @@ Wire Wire Line
 	4450 1900 4650 1900
 $Comp
 L power:+5V #PWR0128
-U 1 1 5DEABB73
+U 1 1 5DFAF7E7
 P 4450 1900
 F 0 "#PWR0128" H 4450 1750 50  0001 C CNN
 F 1 "+5V" H 4465 2073 50  0000 C CNN
@@ -1125,4 +1125,301 @@ Wire Wire Line
 	6300 4750 5850 4750
 Text Label 5850 4750 0    50   ~ 0
 LED_B
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5DEABB73
+P 5850 6400
+F 0 "TP6" V 5850 6650 50  0000 C CNN
+F 1 "TestPoint" H 5908 6427 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 6050 6400 50  0001 C CNN
+F 3 "~" H 6050 6400 50  0001 C CNN
+	1    5850 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP9
+U 1 1 5DEACCF1
+P 6000 6500
+F 0 "JP9" H 6000 6613 50  0001 C CNN
+F 1 "SolderJumper_2_Bridged" H 6000 6614 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6000 6500 50  0001 C CNN
+F 3 "~" H 6000 6500 50  0001 C CNN
+	1    6000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5DEC1A69
+P 5850 6800
+F 0 "TP7" V 5850 7050 50  0000 C CNN
+F 1 "TestPoint" H 5908 6827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 6050 6800 50  0001 C CNN
+F 3 "~" H 6050 6800 50  0001 C CNN
+	1    5850 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5DECC0D8
+P 5550 6550
+F 0 "R14" V 5600 6650 50  0000 L CNN
+F 1 "TRIM_UP" V 5500 6650 50  0001 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5480 6550 50  0001 C CNN
+F 3 "~" H 5550 6550 50  0001 C CNN
+	1    5550 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP10
+U 1 1 5DEC145E
+P 6000 6700
+F 0 "JP10" H 6000 6813 50  0001 C CNN
+F 1 "SolderJumper_2_Bridged" H 6000 6814 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6000 6700 50  0001 C CNN
+F 3 "~" H 6000 6700 50  0001 C CNN
+	1    6000 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5DED7752
+P 5550 6650
+F 0 "R15" V 5600 6750 50  0000 L CNN
+F 1 "TRIM_UP" V 5500 6750 50  0001 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5480 6650 50  0001 C CNN
+F 3 "~" H 5550 6650 50  0001 C CNN
+	1    5550 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 6600 5850 6600
+Wire Wire Line
+	5700 6550 5850 6550
+Wire Wire Line
+	5850 6550 5850 6600
+Connection ~ 5850 6600
+Wire Wire Line
+	5850 6600 5850 6650
+Wire Wire Line
+	5850 6650 5700 6650
+Wire Wire Line
+	5400 6500 5400 6550
+Wire Wire Line
+	5400 6650 5400 6700
+Wire Wire Line
+	5350 6500 5400 6500
+Connection ~ 5400 6500
+Wire Wire Line
+	5400 6500 5850 6500
+Wire Wire Line
+	5850 6400 5850 6500
+Connection ~ 5850 6500
+Wire Wire Line
+	5350 6700 5400 6700
+Connection ~ 5400 6700
+Wire Wire Line
+	5400 6700 5850 6700
+Wire Wire Line
+	5850 6700 5850 6800
+Connection ~ 5850 6700
+Wire Wire Line
+	5350 6400 5750 6400
+Wire Wire Line
+	5750 6400 5750 6300
+Wire Wire Line
+	5750 6300 6200 6300
+Wire Wire Line
+	6200 6300 6200 6500
+Wire Wire Line
+	6200 6500 6150 6500
+Wire Wire Line
+	5350 6800 5750 6800
+Wire Wire Line
+	5750 6800 5750 6900
+Wire Wire Line
+	5750 6900 6200 6900
+Wire Wire Line
+	6200 6900 6200 6700
+Wire Wire Line
+	6200 6700 6150 6700
+$Comp
+L Device:C C7
+U 1 1 5DEF98FA
+P 3750 6200
+F 0 "C7" H 3865 6246 50  0000 L CNN
+F 1 "22uF" H 3865 6155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3788 6050 50  0001 C CNN
+F 3 "~" H 3750 6200 50  0001 C CNN
+F 4 "399-16572-ND" H 3750 6200 50  0001 C CNN "Digikey PN"
+	1    3750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5DEF9CD4
+P 4250 6800
+F 0 "#PWR0135" H 4250 6550 50  0001 C CNN
+F 1 "GND" H 4255 6627 50  0000 C CNN
+F 2 "" H 4250 6800 50  0001 C CNN
+F 3 "" H 4250 6800 50  0001 C CNN
+	1    4250 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5DF02D1C
+P 3750 6350
+F 0 "#PWR0136" H 3750 6100 50  0001 C CNN
+F 1 "GND" H 3755 6177 50  0000 C CNN
+F 2 "" H 3750 6350 50  0001 C CNN
+F 3 "" H 3750 6350 50  0001 C CNN
+	1    3750 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Anderson_Powerpole:Anderson_PP45_Power_RA J5
+U 1 1 5DF03071
+P 6350 7350
+F 0 "J5" H 6400 7400 50  0000 C CNN
+F 1 "Anderson_PP45_Power_RA" H 6250 7000 50  0000 C CNN
+F 2 "Anderson_Powerpole:Anderson_Powerpole-45A-RA-Bottom-Pair" H 6700 6950 50  0001 C CNN
+F 3 "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf" H 6750 7750 50  0001 C CNN
+	1    6350 7350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 7550 5200 7550
+Wire Wire Line
+	5850 7450 5200 7450
+Text Label 6300 6500 0    50   ~ 0
+AUX_12V_POS
+Text Label 6300 6700 0    50   ~ 0
+AUX_12V_NEG
+Wire Wire Line
+	6200 6500 6850 6500
+Connection ~ 6200 6500
+Wire Wire Line
+	6850 6700 6200 6700
+Connection ~ 6200 6700
+Text Label 5200 7450 0    50   ~ 0
+AUX_12V_POS
+Text Label 5200 7550 0    50   ~ 0
+AUX_12V_NEG
+$Comp
+L Device:Fuse F2
+U 1 1 5DF15655
+P 3500 5950
+F 0 "F2" V 3303 5950 50  0000 C CNN
+F 1 "Fuse" V 3394 5950 50  0000 C CNN
+F 2 "General_Library:Fuseholder_Clip-5x20mm_Schurter_0751_0052_Horizontal_Open" V 3430 5950 50  0001 C CNN
+F 3 "~" H 3500 5950 50  0001 C CNN
+	1    3500 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 5950 3750 5950
+Wire Wire Line
+	3750 5950 3750 6050
+$Comp
+L power:+VSW #PWR0137
+U 1 1 5DF1F7E5
+P 3250 5850
+F 0 "#PWR0137" H 3250 5700 50  0001 C CNN
+F 1 "+VSW" H 3265 6023 50  0000 C CNN
+F 2 "" H 3250 5850 50  0001 C CNN
+F 3 "" H 3250 5850 50  0001 C CNN
+	1    3250 5850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5850 3250 5950
+Wire Wire Line
+	3250 5950 3350 5950
+Wire Wire Line
+	3750 5950 4150 5950
+Wire Wire Line
+	4150 5950 4150 6400
+Wire Wire Line
+	4150 6400 4250 6400
+Connection ~ 3750 5950
+Wire Wire Line
+	3700 6600 4250 6600
+Text Label 5700 4450 0    50   ~ 0
+AUX_12V_ENA
+Wire Wire Line
+	5700 4450 6300 4450
+Text Label 2800 7100 0    50   ~ 0
+AUX_12V_ENA
+Wire Wire Line
+	2800 7100 3400 7100
+$Comp
+L Transistor_FET:BSS123 Q2
+U 1 1 5DF32A6C
+P 3600 7100
+F 0 "Q2" H 3806 7146 50  0000 L CNN
+F 1 "BSS123" H 3806 7055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 7025 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30366.pdf" H 3600 7100 50  0001 L CNN
+	1    3600 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5DF39101
+P 3700 7300
+F 0 "#PWR0138" H 3700 7050 50  0001 C CNN
+F 1 "GND" H 3705 7127 50  0000 C CNN
+F 2 "" H 3700 7300 50  0001 C CNN
+F 3 "" H 3700 7300 50  0001 C CNN
+	1    3700 7300
+	1    0    0    -1  
+$EndComp
+Text Label 3750 5950 0    50   ~ 0
+AUX_SW
+$Comp
+L General_Library:Delta_E48SC12010NRFA PS1
+U 1 1 5DFB1493
+P 4650 6600
+F 0 "PS1" H 4450 6900 50  0000 C CNN
+F 1 "Delta_E48SC12010NRFA" H 4800 6300 50  0000 C CNN
+F 2 "General_Library:Converter_DCDC_Delta_E48SC12010_THT" H 4650 6600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/delta-electronics/E48SC12010NRFA/941-1766-ND/6133808" H 4650 6600 50  0001 C CNN
+	1    4650 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6600 3700 6900
+$Comp
+L Anderson_Powerpole:Anderson_PP45_Staple_Nx2 M3
+U 1 1 5DFFFB4C
+P 5700 7150
+F 0 "M3" H 5800 7196 50  0000 L CNN
+F 1 "Anderson_PP45_Staple_Nx2" H 5800 7105 50  0000 L CNN
+F 2 "Anderson_Powerpole:Anderson_Powerpole-staple-Nx2" H 5700 7250 50  0001 C CNN
+F 3 "" H 5700 7250 50  0001 C CNN
+	1    5700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E07439C
+P 2800 6800
+F 0 "TP?" V 2800 7050 50  0000 C CNN
+F 1 "TestPoint" H 2858 6827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3000 6800 50  0001 C CNN
+F 3 "~" H 3000 6800 50  0001 C CNN
+	1    2800 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E07633C
+P 2800 5200
+F 0 "TP?" V 2800 5450 50  0000 C CNN
+F 1 "TestPoint" H 2858 5227 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3000 5200 50  0001 C CNN
+F 3 "~" H 3000 5200 50  0001 C CNN
+	1    2800 5200
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

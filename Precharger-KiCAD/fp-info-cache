@@ -1,4 +1,4 @@
-15850570867644998
+15852146538170696
 Anderson_Powerpole
 Anderson_Powerpole-25A-RA-G1
 Use through-hole center to align with adjacent PowerPole connectors.  Do not rely on housing outlines.
@@ -44808,11 +44808,18 @@ UL/CSA 6x32mm Ceramic Slow Blow Fuse
 2
 General_Library
 Converter_DCDC_Delta_E48SC12010_THT
-
+DCDC-Converter, Delta, Delphi Series, 12V 10A Output, 2250VDC Isolation, 58.4x22.9x8.4mm https://www.digikey.com/product-detail/en/delta-electronics/E48SC12010NRFA/941-1766-ND/6133808
 
 0
 8
 8
+General_Library
+Fuseholder_Clip-5x20mm_Schurter_0751_0052_Horizontal_Open
+Fuseholder Clips horizontal open 5x20 Schurter 0751.0052, https://www.digikey.com/product-detail/en/schurter-inc/0751.0052/486-1173-ND/1522972
+Fuseholder Clips horizontal open 5x20 Schurter 0751.0052
+0
+4
+2
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
