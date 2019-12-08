@@ -1115,7 +1115,7 @@ Text Label 10200 4300 1    50   ~ 0
 LED_B
 Wire Wire Line
 	6300 4550 5850 4550
-Text Label 5850 4550 0    50   ~ 0
+Text Label 5850 4750 0    50   ~ 0
 LED_R
 Wire Wire Line
 	6300 4650 5850 4650
@@ -1123,7 +1123,7 @@ Text Label 5850 4650 0    50   ~ 0
 LED_G
 Wire Wire Line
 	6300 4750 5850 4750
-Text Label 5850 4750 0    50   ~ 0
+Text Label 5850 4550 0    50   ~ 0
 LED_B
 $Comp
 L Connector:TestPoint TP6
@@ -1344,10 +1344,8 @@ Wire Wire Line
 Connection ~ 3750 5950
 Wire Wire Line
 	3700 6600 4250 6600
-Text Label 5700 4450 0    50   ~ 0
+Text Label 5450 3850 0    50   ~ 0
 AUX_12V_ENA
-Wire Wire Line
-	5700 4450 6300 4450
 Text Label 2800 7100 0    50   ~ 0
 AUX_12V_ENA
 Wire Wire Line
@@ -1422,4 +1420,6 @@ F 3 "~" H 3000 5200 50  0001 C CNN
 	1    2800 5200
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5450 3850 6300 3850
 $EndSCHEMATC

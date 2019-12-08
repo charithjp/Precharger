@@ -1344,10 +1344,8 @@ Wire Wire Line
 Connection ~ 3750 5950
 Wire Wire Line
 	3700 6600 4250 6600
-Text Label 5700 4450 0    50   ~ 0
+Text Label 5450 3850 0    50   ~ 0
 AUX_12V_ENA
-Wire Wire Line
-	5700 4450 6300 4450
 Text Label 2800 7100 0    50   ~ 0
 AUX_12V_ENA
 Wire Wire Line
@@ -1401,10 +1399,10 @@ F 3 "" H 5700 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP8
 U 1 1 5E07439C
 P 2800 6800
-F 0 "TP?" V 2800 7050 50  0000 C CNN
+F 0 "TP8" V 2800 7050 50  0000 C CNN
 F 1 "TestPoint" H 2858 6827 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3000 6800 50  0001 C CNN
 F 3 "~" H 3000 6800 50  0001 C CNN
@@ -1412,14 +1410,16 @@ F 3 "~" H 3000 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP5
 U 1 1 5E07633C
 P 2800 5200
-F 0 "TP?" V 2800 5450 50  0000 C CNN
+F 0 "TP5" V 2800 5450 50  0000 C CNN
 F 1 "TestPoint" H 2858 5227 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3000 5200 50  0001 C CNN
 F 3 "~" H 3000 5200 50  0001 C CNN
 	1    2800 5200
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5450 3850 6300 3850
 $EndSCHEMATC
