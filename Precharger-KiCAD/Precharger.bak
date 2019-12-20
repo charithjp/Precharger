@@ -1422,4 +1422,8 @@ F 3 "~" H 3000 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5450 3850 6300 3850
+Text Notes 3100 2700 0    50   ~ 0
+FOOTPRINT ERROR!
+Text Notes 4350 850  0    50   ~ 0
+Check leakage issue
 $EndSCHEMATC
