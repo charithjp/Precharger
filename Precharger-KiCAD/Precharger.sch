@@ -1426,4 +1426,6 @@ Text Notes 3100 2700 0    50   ~ 0
 FOOTPRINT ERROR!
 Text Notes 4350 850  0    50   ~ 0
 Only blocks in one direction! Update SCH symbol
+Text Notes 4400 4550 0    50   ~ 0
+RED TO BE MOVED FOM D11 TO D6
 $EndSCHEMATC
