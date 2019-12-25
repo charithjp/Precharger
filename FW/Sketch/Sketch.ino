@@ -40,6 +40,12 @@ int32_t output_voltage = 0;
 
 // the setup routine runs once when you press reset:
 void setup() {
+  digitalWrite(PRECHARGE_PIN, HIGH);
+  pinMode(PRECHARGE_PIN, OUTPUT);
+  
+  digitalWrite(CLOSE_FET_PIN, HIGH);
+  pinMode(CLOSE_FET_PIN, OUTPUT);
+  
   // initialize serial communication at 115200 bits per second:
   Serial.begin(115200);
   pinMode(RED_LED_PIN_NC, INPUT); // Evil hack to prevent issues with initial board spin
@@ -51,12 +57,6 @@ void setup() {
   pinMode(RED_LED_PIN, OUTPUT);
   pinMode(GREEN_LED_PIN, OUTPUT);
   pinMode(BLUE_LED_PIN, OUTPUT);
-
-  digitalWrite(PRECHARGE_PIN, HIGH);
-  pinMode(PRECHARGE_PIN, OUTPUT);
-  
-  digitalWrite(CLOSE_FET_PIN, HIGH);
-  pinMode(CLOSE_FET_PIN, OUTPUT);
 }
 
 void set_led_rgb(uint8_t red, uint8_t green, uint8_t blue){
@@ -133,7 +133,7 @@ void loop() {
           set_led_rgb(0, 0, 0);
         }
         read_voltages();
-        i=sprintf (serialBuf, "Precharging - VBatt: %d, Vout:%d, tElap:%u", (int) battery_voltage, (int) output_voltage, (unsigned int) (millis() -  start_time));
+        i=sprintf (serialBuf, "Precharging - VBatt: %u, Vout:%u, tElap:%u", (unsigned int) battery_voltage, (unsigned int) output_voltage, (unsigned int) (millis() -  start_time));
         Serial.println(serialBuf);
 
         // If the voltage goes beyond allowable range, terminate precharge
