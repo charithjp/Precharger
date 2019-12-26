@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+LIBS:Precharger-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L L?
+U 1 1 5E058925
+P 5150 3900
+F 0 "L?" V 5431 3900 50  0000 C CNN
+F 1 "68uH" V 5340 3900 50  0000 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 5150 3900 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/taiyo-yuden/LBC3225T680KR/587-2432-1-ND/2230298" H 5150 3900 50  0001 C CNN
+F 4 "LBC3225T680KR" V 5249 3900 50  0000 C CNN "MFG_PN"
+	1    5150 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Polyfuse F?
+U 1 1 5E05892C
+P 4350 3900
+F 0 "F?" V 4035 3900 50  0000 C CNN
+F 1 "Polyfuse" V 4126 3900 50  0000 C CNN
+F 2 "Fuse:Fuse_BelFuse_0ZRE0008FF_L8.3mm_W3.8mm" H 4400 3700 50  0001 L CNN
+F 3 "https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZRE0008FF1C/507-1349-ND/1560204" H 4350 3900 50  0001 C CNN
+F 4 "0ZRE0008FF1C" V 4217 3900 50  0000 C CNN "MFG_PN"
+	1    4350 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E058932
+P 3850 3800
+F 0 "#PWR?" H 3850 3650 50  0001 C CNN
+F 1 "+BATT" H 3865 3973 50  0000 C CNN
+F 2 "" H 3850 3800 50  0001 C CNN
+F 3 "" H 3850 3800 50  0001 C CNN
+	1    3850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3900 4200 3900
+Wire Wire Line
+	3850 3800 3850 3900
+$Comp
+L Device:C C?
+U 1 1 5E05893A
+P 5550 4050
+F 0 "C?" H 5665 4096 50  0000 L CNN
+F 1 "2.2uF" H 5665 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 5588 3900 50  0001 C CNN
+F 3 "~" H 5550 4050 50  0001 C CNN
+	1    5550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E058940
+P 4750 4050
+F 0 "C?" H 4865 4096 50  0000 L CNN
+F 1 "2.2uF" H 4865 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4788 3900 50  0001 C CNN
+F 3 "~" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3900 5000 3900
+Wire Wire Line
+	5300 3900 5550 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E058948
+P 6400 4200
+F 0 "#PWR?" H 6400 3950 50  0001 C CNN
+F 1 "GND" H 6405 4027 50  0000 C CNN
+F 2 "" H 6400 4200 50  0001 C CNN
+F 3 "" H 6400 4200 50  0001 C CNN
+	1    6400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3900 4750 3900
+Connection ~ 4750 3900
+Wire Wire Line
+	5550 3900 6100 3900
+Connection ~ 5550 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E058952
+P 5550 4200
+F 0 "#PWR?" H 5550 3950 50  0001 C CNN
+F 1 "GND" H 5555 4027 50  0000 C CNN
+F 2 "" H 5550 4200 50  0001 C CNN
+F 3 "" H 5550 4200 50  0001 C CNN
+	1    5550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E058958
+P 4750 4200
+F 0 "#PWR?" H 4750 3950 50  0001 C CNN
+F 1 "GND" H 4755 4027 50  0000 C CNN
+F 2 "" H 4750 4200 50  0001 C CNN
+F 3 "" H 4750 4200 50  0001 C CNN
+	1    4750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E05895E
+P 7050 4050
+F 0 "C?" H 7165 4096 50  0000 L CNN
+F 1 "10uF" H 7165 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7088 3900 50  0001 C CNN
+F 3 "~" H 7050 4050 50  0001 C CNN
+	1    7050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E058964
+P 7050 3900
+F 0 "#PWR?" H 7050 3750 50  0001 C CNN
+F 1 "+5V" H 7065 4073 50  0000 C CNN
+F 2 "" H 7050 3900 50  0001 C CNN
+F 3 "" H 7050 3900 50  0001 C CNN
+	1    7050 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3900 7050 3900
+Connection ~ 7050 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E05896C
+P 7050 4200
+F 0 "#PWR?" H 7050 3950 50  0001 C CNN
+F 1 "GND" H 7055 4027 50  0000 C CNN
+F 2 "" H 7050 4200 50  0001 C CNN
+F 3 "" H 7050 4200 50  0001 C CNN
+	1    7050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L General_Library:R-78HE5.0-0.3 U?
+U 1 1 5E058972
+P 6400 3900
+F 0 "U?" H 6400 4142 50  0000 C CNN
+F 1 "R-78HE5.0-0.3" H 6400 4051 50  0000 C CNN
+F 2 "General_Library:Converter_DCDC_RECOM_R-78HE-0.3" H 6450 3650 50  0001 L CIN
+F 3 "https://recom-power.com/pdf/Innoline/R-78HE-0.3.pdf" H 6400 3900 50  0001 C CNN
+	1    6400 3900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
