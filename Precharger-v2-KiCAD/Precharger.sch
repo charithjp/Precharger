@@ -59,17 +59,6 @@ F 3 "" H 10500 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:R-78HB5.0-0.5 U3
-U 1 1 5DE55D69
-P 3400 2950
-F 0 "U3" H 3400 3192 50  0000 C CNN
-F 1 "R-78HE5.0-0.3" H 3400 3101 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78HB-0.5_THT" H 3450 2700 50  0001 L CIN
-F 3 "https://www.recom-power.com/pdf/Innoline/R-78HBxx-0.5_L.pdf" H 3400 2950 50  0001 C CNN
-	1    3400 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:L L1
 U 1 1 5DE572B0
 P 2150 2950
@@ -632,14 +621,6 @@ F 3 "~" H 6150 3650 50  0001 C CNN
 	1    6150 3650
 	1    0    0    -1  
 $EndComp
-Text Label 5550 4150 0    50   ~ 0
-EXT_TX
-Text Label 5550 4050 0    50   ~ 0
-EXT_RX
-Wire Wire Line
-	6000 4150 5550 4150
-Wire Wire Line
-	6000 4050 5550 4050
 Text Label 5550 3750 0    50   ~ 0
 EXT_TX
 Text Label 5550 3650 0    50   ~ 0
@@ -648,17 +629,6 @@ Wire Wire Line
 	6000 3750 5550 3750
 Wire Wire Line
 	6000 3650 5550 3650
-$Comp
-L Jumper:SolderJumper_2_Bridged JP4
-U 1 1 5DE8F8F2
-P 6150 4150
-F 0 "JP4" H 6150 4263 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 6150 4264 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4150 50  0001 C CNN
-F 3 "~" H 6150 4150 50  0001 C CNN
-	1    6150 4150
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0129
 U 1 1 5DE769CE
@@ -1104,10 +1074,14 @@ Text Label 10200 4300 1    50   ~ 0
 LED_B
 Wire Wire Line
 	6300 4550 5850 4550
+Text Label 5850 4250 0    50   ~ 0
+LED_R
 Wire Wire Line
 	6300 4650 5850 4650
 Text Label 5850 4650 0    50   ~ 0
 LED_G
+Wire Wire Line
+	6300 4250 5850 4250
 Text Label 5850 4550 0    50   ~ 0
 LED_B
 $Comp
@@ -1410,24 +1384,116 @@ Wire Wire Line
 Text Notes 3100 2700 0    50   ~ 0
 FOOTPRINT ERROR!
 Text Notes 4350 850  0    50   ~ 0
-Only blocks in one direction! SCH symbol Updated
-Text Notes 7750 900  0    50   ~ 0
-Pain to solder extend out footprint
+Only blocks in one direction! Update SCH symbol
+Text Label 5850 3950 0    50   ~ 0
+PWM_ENA
+Wire Wire Line
+	6300 3950 5850 3950
+Text Label 5850 4150 0    50   ~ 0
+PWM_Buck
+Wire Wire Line
+	6300 4150 5850 4150
 $Comp
-L Jumper:SolderJumper_2_Bridged JP3
-U 1 1 5DE8EB88
-P 6150 4050
-F 0 "JP3" H 6150 4163 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 6150 4164 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4050 50  0001 C CNN
-F 3 "~" H 6150 4050 50  0001 C CNN
-	1    6150 4050
+L Diode:BAV99 D?
+U 1 1 5E066B6B
+P 3100 4200
+F 0 "D?" V 3054 4278 50  0000 L CNN
+F 1 "BAV99" V 3145 4278 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 4050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 3100 4300 50  0001 C CNN
+	1    3100 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:BAV99 D?
+U 2 1 5E068523
+P 2950 4050
+F 0 "D?" H 2950 4265 50  0000 C CNN
+F 1 "BAV99" H 2950 4174 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2950 3900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2950 4150 50  0001 C CNN
+	2    2950 4050
 	1    0    0    -1  
 $EndComp
-Text Notes 4400 4550 0    50   ~ 0
-RED TO BE MOVED FOM D11 TO D6
+$Comp
+L Device:C C?
+U 1 1 5E06EAA7
+P 3550 4050
+F 0 "C?" H 3665 4096 50  0000 L CNN
+F 1 "1nF" H 3665 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3588 3900 50  0001 C CNN
+F 3 "~" H 3550 4050 50  0001 C CNN
+	1    3550 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E07408A
+P 3100 4350
+F 0 "#PWR?" H 3100 4100 50  0001 C CNN
+F 1 "GND" H 3105 4177 50  0000 C CNN
+F 2 "" H 3100 4350 50  0001 C CNN
+F 3 "" H 3100 4350 50  0001 C CNN
+	1    3100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E077AE9
+P 2450 4200
+F 0 "C?" H 2565 4246 50  0000 L CNN
+F 1 "100nF" H 2565 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2488 4050 50  0001 C CNN
+F 3 "~" H 2450 4200 50  0001 C CNN
+	1    2450 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E0796D6
+P 2600 4200
+F 0 "R?" H 2670 4246 50  0000 L CNN
+F 1 "22M" H 2670 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2530 4200 50  0001 C CNN
+F 3 "~" H 2600 4200 50  0001 C CNN
+	1    2600 4200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6300 4750 5850 4750
-Text Label 5850 4750 0    50   ~ 0
-LED_R
+	2450 4050 2600 4050
+Connection ~ 2600 4050
+Wire Wire Line
+	2600 4050 2800 4050
+Wire Wire Line
+	3100 4050 3400 4050
+Connection ~ 3100 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5E08DC31
+P 2450 4350
+F 0 "#PWR?" H 2450 4100 50  0001 C CNN
+F 1 "GND" H 2455 4177 50  0000 C CNN
+F 2 "" H 2450 4350 50  0001 C CNN
+F 3 "" H 2450 4350 50  0001 C CNN
+	1    2450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4350 2600 4350
+Connection ~ 2450 4350
+Text Label 3700 4050 0    50   ~ 0
+PWM_ENA
+Wire Wire Line
+	4150 4050 3700 4050
+$Comp
+L General_Library:R-78HE5.0-0.3 U?
+U 1 1 5E0AE6E7
+P 3400 2950
+F 0 "U?" H 3400 3192 50  0000 C CNN
+F 1 "R-78HE5.0-0.3" H 3400 3101 50  0000 C CNN
+F 2 "General_Library:Converter_DCDC_RECOM_R-78HE-0.3" H 3450 2700 50  0001 L CIN
+F 3 "https://recom-power.com/pdf/Innoline/R-78HE-0.3.pdf" H 3400 2950 50  0001 C CNN
+	1    3400 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

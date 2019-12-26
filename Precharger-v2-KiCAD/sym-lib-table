@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Precharger_Lib)(type Legacy)(uri ${KIPRJMOD}/Precharger_Lib.lib)(options "")(descr ""))
+  (lib (name Precharger-rescue)(type Legacy)(uri ${KIPRJMOD}/Precharger-rescue.lib)(options "")(descr ""))
+)

@@ -632,14 +632,6 @@ F 3 "~" H 6150 3650 50  0001 C CNN
 	1    6150 3650
 	1    0    0    -1  
 $EndComp
-Text Label 5550 4150 0    50   ~ 0
-EXT_TX
-Text Label 5550 4050 0    50   ~ 0
-EXT_RX
-Wire Wire Line
-	6000 4150 5550 4150
-Wire Wire Line
-	6000 4050 5550 4050
 Text Label 5550 3750 0    50   ~ 0
 EXT_TX
 Text Label 5550 3650 0    50   ~ 0
@@ -648,17 +640,6 @@ Wire Wire Line
 	6000 3750 5550 3750
 Wire Wire Line
 	6000 3650 5550 3650
-$Comp
-L Jumper:SolderJumper_2_Bridged JP4
-U 1 1 5DE8F8F2
-P 6150 4150
-F 0 "JP4" H 6150 4263 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 6150 4264 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4150 50  0001 C CNN
-F 3 "~" H 6150 4150 50  0001 C CNN
-	1    6150 4150
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0129
 U 1 1 5DE769CE
@@ -1104,10 +1085,14 @@ Text Label 10200 4300 1    50   ~ 0
 LED_B
 Wire Wire Line
 	6300 4550 5850 4550
+Text Label 5850 4250 0    50   ~ 0
+LED_R
 Wire Wire Line
 	6300 4650 5850 4650
 Text Label 5850 4650 0    50   ~ 0
 LED_G
+Wire Wire Line
+	6300 4250 5850 4250
 Text Label 5850 4550 0    50   ~ 0
 LED_B
 $Comp
@@ -1410,24 +1395,35 @@ Wire Wire Line
 Text Notes 3100 2700 0    50   ~ 0
 FOOTPRINT ERROR!
 Text Notes 4350 850  0    50   ~ 0
-Only blocks in one direction! SCH symbol Updated
-Text Notes 7750 900  0    50   ~ 0
-Pain to solder extend out footprint
+Only blocks in one direction! Update SCH symbol
+Text Label 5850 3950 0    50   ~ 0
+PWM_ENA
+Wire Wire Line
+	6300 3950 5850 3950
+Text Label 5850 4150 0    50   ~ 0
+PWM_Buck
+Wire Wire Line
+	6300 4150 5850 4150
 $Comp
-L Jumper:SolderJumper_2_Bridged JP3
-U 1 1 5DE8EB88
-P 6150 4050
-F 0 "JP3" H 6150 4163 50  0001 C CNN
-F 1 "SolderJumper_2_Bridged" H 6150 4164 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4050 50  0001 C CNN
-F 3 "~" H 6150 4050 50  0001 C CNN
-	1    6150 4050
+L Diode:BAV99 D?
+U 1 1 5E066B6B
+P 4550 3750
+F 0 "D?" H 4550 3965 50  0000 C CNN
+F 1 "BAV99" H 4550 3874 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4550 3600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 4550 3850 50  0001 C CNN
+	1    4550 3750
 	1    0    0    -1  
 $EndComp
-Text Notes 4400 4550 0    50   ~ 0
-RED TO BE MOVED FOM D11 TO D6
-Wire Wire Line
-	6300 4750 5850 4750
-Text Label 5850 4750 0    50   ~ 0
-LED_R
+$Comp
+L Diode:BAV99 D?
+U 2 1 5E068523
+P 4600 4300
+F 0 "D?" H 4600 4515 50  0000 C CNN
+F 1 "BAV99" H 4600 4424 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 4150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 4600 4400 50  0001 C CNN
+	2    4600 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
