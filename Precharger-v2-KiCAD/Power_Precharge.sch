@@ -442,4 +442,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic4426.pdf" H 6150 3800 50
 	1    6150 4100
 	1    0    0    -1  
 $EndComp
+Text Notes 7050 6150 0    50   ~ 0
+https://www.digikey.com/product-detail/en/w-rth-elektronik/7447709151/732-1695-1-ND/1994275
 $EndSCHEMATC
