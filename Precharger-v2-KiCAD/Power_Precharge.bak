@@ -26,16 +26,81 @@ F 3 "" H 1750 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Precharger_Lib:SQJQ480E Q?
-U 1 1 5E081A52
-P 8150 2800
-F 0 "Q?" H 8356 2846 50  0000 L CNN
-F 1 "SQJQ480E" H 8356 2755 50  0000 L CNN
-F 2 "Precharger:Vishay_PowerPAK_8x8L_Single" H 8250 2300 50  0001 C CIN
-F 3 "https://www.vishay.com/docs/76718/sqjq480e.pdf" H 8150 2800 50  0001 L CNN
-	1    8150 2800
+L Precharger_Lib:VOM1271 U?
+U 1 1 5E081A4C
+P 6300 2950
+F 0 "U?" H 6300 3275 50  0000 C CNN
+F 1 "VOM1271" H 6300 3184 50  0000 C CNN
+F 2 "Precharger:SOP-4_4.57x4.92mm_P2.54mm_VOM1271" H 6300 2600 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/83469/vom1271t.pdf" H 6277 2956 50  0001 C CNN
+	1    6300 2950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Precharger_Lib:SQJQ480E Q?
+U 1 1 5E081A52
+P 7000 2850
+F 0 "Q?" H 7206 2896 50  0000 L CNN
+F 1 "SQJQ480E" H 7206 2805 50  0000 L CNN
+F 2 "Precharger:Vishay_PowerPAK_8x8L_Single" H 7100 2350 50  0001 C CIN
+F 3 "https://www.vishay.com/docs/76718/sqjq480e.pdf" H 7000 2850 50  0001 L CNN
+	1    7000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E081A58
+P 7100 2650
+F 0 "#PWR?" H 7100 2500 50  0001 C CNN
+F 1 "+BATT" H 7115 2823 50  0000 C CNN
+F 2 "" H 7100 2650 50  0001 C CNN
+F 3 "" H 7100 2650 50  0001 C CNN
+	1    7100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VSW #PWR?
+U 1 1 5E081A5E
+P 7250 3200
+F 0 "#PWR?" H 7250 3050 50  0001 C CNN
+F 1 "+VSW" H 7265 3373 50  0000 C CNN
+F 2 "" H 7250 3200 50  0001 C CNN
+F 3 "" H 7250 3200 50  0001 C CNN
+	1    7250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3200 7100 3050
+Wire Wire Line
+	6700 2850 6750 2850
+$Comp
+L Device:R R?
+U 1 1 5E081A66
+P 5750 3200
+F 0 "R?" H 5820 3246 50  0000 L CNN
+F 1 "330R" H 5820 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 3200 50  0001 C CNN
+F 3 "~" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E081A6C
+P 5850 2800
+F 0 "#PWR?" H 5850 2650 50  0001 C CNN
+F 1 "+5V" H 5865 2973 50  0000 C CNN
+F 2 "" H 5850 2800 50  0001 C CNN
+F 3 "" H 5850 2800 50  0001 C CNN
+	1    5850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2800 5850 2850
+Wire Wire Line
+	5850 2850 5900 2850
+Text Notes 6000 3500 0    50   ~ 0
+If = (5-1.4)/330 -> 11mA
 Wire Wire Line
 	3100 5050 2950 5050
 Wire Wire Line
@@ -51,10 +116,10 @@ F 3 "" H 2950 4950 50  0001 C CNN
 	1    2950 4950
 	-1   0    0    -1  
 $EndComp
-Text Label 3400 3150 0    50   ~ 0
+Text Label 4450 3200 0    50   ~ 0
 ~CLOSE
 Wire Wire Line
-	3850 3150 3400 3150
+	4900 3200 4450 3200
 $Comp
 L Anderson_Powerpole:Anderson_PP45_Power_RA J?
 U 1 1 5E081A7F
@@ -191,51 +256,91 @@ Only blocks in one direction! Update SCH symbol
 $Comp
 L 74xGxx:74LVC1G125 U?
 U 1 1 5E081ACD
-P 4150 3150
-F 0 "U?" H 3950 2950 50  0000 C CNN
-F 1 "74LVC1G125" H 4100 2850 50  0000 C CNN
-F 2 "" H 4150 3150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4150 3150 50  0001 C CNN
-	1    4150 3150
+P 5200 3200
+F 0 "U?" H 5000 3000 50  0000 C CNN
+F 1 "74LVC1G125" H 5150 2900 50  0000 C CNN
+F 2 "" H 5200 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5200 3200 50  0001 C CNN
+	1    5200 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5E081AD3
-P 4250 3100
-F 0 "#PWR?" H 4250 2950 50  0001 C CNN
-F 1 "+5V" H 4265 3273 50  0000 C CNN
-F 2 "" H 4250 3100 50  0001 C CNN
-F 3 "" H 4250 3100 50  0001 C CNN
-	1    4250 3100
+P 5300 3150
+F 0 "#PWR?" H 5300 3000 50  0001 C CNN
+F 1 "+5V" H 5315 3323 50  0000 C CNN
+F 2 "" H 5300 3150 50  0001 C CNN
+F 3 "" H 5300 3150 50  0001 C CNN
+	1    5300 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 3100 4250 3100
+	5250 3150 5300 3150
 $Comp
 L power:GND #PWR?
 U 1 1 5E081ADA
-P 4200 3200
-F 0 "#PWR?" H 4200 2950 50  0001 C CNN
-F 1 "GND" H 4205 3027 50  0000 C CNN
-F 2 "" H 4200 3200 50  0001 C CNN
-F 3 "" H 4200 3200 50  0001 C CNN
-	1    4200 3200
+P 5250 3250
+F 0 "#PWR?" H 5250 3000 50  0001 C CNN
+F 1 "GND" H 5255 3077 50  0000 C CNN
+F 2 "" H 5250 3250 50  0001 C CNN
+F 3 "" H 5250 3250 50  0001 C CNN
+	1    5250 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 2950 4150 2850
+	5200 3000 5200 2900
 Wire Wire Line
-	4150 2850 4450 2850
-Text Label 4150 2850 0    50   ~ 0
+	5200 2900 5500 2900
+Text Label 5200 2900 0    50   ~ 0
 ~ENABLE
 Wire Wire Line
-	4400 3150 4550 3150
+	7100 3200 7250 3200
 Wire Wire Line
-	4450 2950 4400 2950
+	6700 3200 6750 3200
+Connection ~ 7100 3200
+$Comp
+L Device:C C?
+U 1 1 5E081AE6
+P 6750 3050
+F 0 "C?" H 6865 3096 50  0000 L CNN
+F 1 "1nF" H 6865 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6788 2900 50  0001 C CNN
+F 3 "~" H 6750 3050 50  0001 C CNN
+	1    6750 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 3200
 Wire Wire Line
-	4400 2950 4400 3150
-Connection ~ 4400 3150
+	6750 3200 7100 3200
+Wire Wire Line
+	6750 2850 6750 2900
+Connection ~ 6750 2850
+Wire Wire Line
+	6750 2850 6800 2850
+$Comp
+L Device:R R?
+U 1 1 5E081AF1
+P 5650 3000
+F 0 "R?" V 5700 3100 50  0000 L CNN
+F 1 "10k DNP" V 5550 2900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5580 3000 50  0001 C CNN
+F 3 "~" H 5650 3000 50  0001 C CNN
+	1    5650 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3200 5600 3200
+Wire Wire Line
+	5500 3000 5450 3000
+Wire Wire Line
+	5450 3000 5450 3200
+Connection ~ 5450 3200
+Wire Wire Line
+	5800 3000 5900 3000
+Wire Wire Line
+	5900 3000 5900 2850
+Connection ~ 5900 2850
 $Comp
 L Anderson_Powerpole:Anderson_PP45_Power_RA J?
 U 1 1 5E081A85
@@ -357,6 +462,17 @@ F 3 "~" H 9700 4300 50  0001 C CNN
 $EndComp
 Text Notes 10000 4300 0    50   ~ 0
 Sense Resistor
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E1A3A07
+P 9700 3800
+F 0 "#PWR?" H 9700 3650 50  0001 C CNN
+F 1 "+BATT" H 9715 3973 50  0000 C CNN
+F 2 "" H 9700 3800 50  0001 C CNN
+F 3 "" H 9700 3800 50  0001 C CNN
+	1    9700 3800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	8650 3800 9700 3800
 Wire Wire Line
@@ -376,70 +492,4 @@ Connection ~ 9700 3800
 Wire Wire Line
 	9700 4150 9700 4100
 Connection ~ 9700 4100
-$Comp
-L power:+BATT #PWR?
-U 1 1 5E1A3A07
-P 9700 3800
-F 0 "#PWR?" H 9700 3650 50  0001 C CNN
-F 1 "+BATT" H 9715 3973 50  0000 C CNN
-F 2 "" H 9700 3800 50  0001 C CNN
-F 3 "" H 9700 3800 50  0001 C CNN
-	1    9700 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-VSW #PWR?
-U 1 1 5E1ABF69
-P 8250 2600
-F 0 "#PWR?" H 8250 2700 50  0001 C CNN
-F 1 "-VSW" V 8265 2728 50  0000 L CNN
-F 2 "" H 8250 2600 50  0001 C CNN
-F 3 "" H 8250 2600 50  0001 C CNN
-	1    8250 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E1AC76E
-P 8250 3000
-F 0 "#PWR?" H 8250 2750 50  0001 C CNN
-F 1 "GND" H 8255 2827 50  0000 C CNN
-F 2 "" H 8250 3000 50  0001 C CNN
-F 3 "" H 8250 3000 50  0001 C CNN
-	1    8250 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E1ACC62
-P 7800 2950
-F 0 "R?" H 7870 2996 50  0000 L CNN
-F 1 "4.7k" H 7870 2905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 2950 50  0001 C CNN
-F 3 "~" H 7800 2950 50  0001 C CNN
-	1    7800 2950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E1ADC15
-P 7350 2800
-F 0 "R?" H 7420 2846 50  0000 L CNN
-F 1 "100R" H 7420 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7280 2800 50  0001 C CNN
-F 3 "~" H 7350 2800 50  0001 C CNN
-	1    7350 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L Driver_FET:MIC4427 U?
-U 1 1 5E1AF0A5
-P 6150 4100
-F 0 "U?" H 6150 4681 50  0000 C CNN
-F 1 "MIC4427" H 6150 4590 50  0000 C CNN
-F 2 "" H 6150 3800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic4426.pdf" H 6150 3800 50  0001 C CNN
-	1    6150 4100
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

@@ -516,8 +516,8 @@ GND
 $Sheet
 S 750  2900 700  600 
 U 5E04D7BE
-F0 "5V_Supply" 50
-F1 "5V_Supply.sch" 50
+F0 "Power_Supply" 50
+F1 "Power_Supply.sch" 50
 $EndSheet
 $Sheet
 S 1100 6400 950  1000

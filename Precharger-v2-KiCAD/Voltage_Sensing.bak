@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -216,17 +216,6 @@ Wire Wire Line
 	3900 5350 3900 4750
 Connection ~ 3900 4750
 $Comp
-L power:+VSW #PWR?
-U 1 1 5E0696C7
-P 2750 4050
-F 0 "#PWR?" H 2750 3900 50  0001 C CNN
-F 1 "+VSW" H 2765 4223 50  0000 C CNN
-F 2 "" H 2750 4050 50  0001 C CNN
-F 3 "" H 2750 4050 50  0001 C CNN
-	1    2750 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP?
 U 1 1 5E0696CD
 P 4550 4750
@@ -247,5 +236,16 @@ F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4750 3150 50  0001 C
 F 3 "~" H 4750 3150 50  0001 C CNN
 	1    4550 3150
 	0    1    1    0   
+$EndComp
+$Comp
+L power:-VSW #PWR?
+U 1 1 5E198C20
+P 2750 4050
+F 0 "#PWR?" H 2750 4150 50  0001 C CNN
+F 1 "-VSW" H 2765 4223 50  0000 C CNN
+F 2 "" H 2750 4050 50  0001 C CNN
+F 3 "" H 2750 4050 50  0001 C CNN
+	1    2750 4050
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

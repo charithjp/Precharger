@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -14,145 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR0101
-U 1 1 5DE5316D
-P 2000 1250
-F 0 "#PWR0101" H 2000 1000 50  0001 C CNN
-F 1 "GND" H 2005 1077 50  0000 C CNN
-F 2 "" H 2000 1250 50  0001 C CNN
-F 3 "" H 2000 1250 50  0001 C CNN
-	1    2000 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5DE53B6C
-P 11000 900
-F 0 "#PWR0102" H 11000 650 50  0001 C CNN
-F 1 "GND" H 11005 727 50  0000 C CNN
-F 2 "" H 11000 900 50  0001 C CNN
-F 3 "" H 11000 900 50  0001 C CNN
-	1    11000 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR0103
-U 1 1 5DE548D1
-P 2000 1150
-F 0 "#PWR0103" H 2000 1000 50  0001 C CNN
-F 1 "+BATT" H 2015 1323 50  0000 C CNN
-F 2 "" H 2000 1150 50  0001 C CNN
-F 3 "" H 2000 1150 50  0001 C CNN
-	1    2000 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+VSW #PWR0104
-U 1 1 5DE54EF7
-P 11000 800
-F 0 "#PWR0104" H 11000 650 50  0001 C CNN
-F 1 "+VSW" H 11015 973 50  0000 C CNN
-F 2 "" H 11000 800 50  0001 C CNN
-F 3 "" H 11000 800 50  0001 C CNN
-	1    11000 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Precharger_Lib:VOM1271 U5
-U 1 1 5DE62DC3
-P 8600 1100
-F 0 "U5" H 8600 1425 50  0000 C CNN
-F 1 "VOM1271" H 8600 1334 50  0000 C CNN
-F 2 "Precharger:SOP-4_4.57x4.92mm_P2.54mm_VOM1271" H 8600 750 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/83469/vom1271t.pdf" H 8577 1106 50  0001 C CNN
-	1    8600 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Precharger_Lib:SQJQ480E Q1
-U 1 1 5DE64836
-P 9300 1000
-F 0 "Q1" H 9506 1046 50  0000 L CNN
-F 1 "SQJQ480E" H 9506 955 50  0000 L CNN
-F 2 "Precharger:Vishay_PowerPAK_8x8L_Single" H 9400 500 50  0001 C CIN
-F 3 "https://www.vishay.com/docs/76718/sqjq480e.pdf" H 9300 1000 50  0001 L CNN
-	1    9300 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR0119
-U 1 1 5DE68A22
-P 9400 800
-F 0 "#PWR0119" H 9400 650 50  0001 C CNN
-F 1 "+BATT" H 9415 973 50  0000 C CNN
-F 2 "" H 9400 800 50  0001 C CNN
-F 3 "" H 9400 800 50  0001 C CNN
-	1    9400 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+VSW #PWR0120
-U 1 1 5DE69946
-P 9550 1350
-F 0 "#PWR0120" H 9550 1200 50  0001 C CNN
-F 1 "+VSW" H 9565 1523 50  0000 C CNN
-F 2 "" H 9550 1350 50  0001 C CNN
-F 3 "" H 9550 1350 50  0001 C CNN
-	1    9550 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 1350 9400 1200
-Wire Wire Line
-	9000 1000 9050 1000
-$Comp
-L Device:R R10
-U 1 1 5DE78E1F
-P 8050 1350
-F 0 "R10" H 8120 1396 50  0000 L CNN
-F 1 "330R" H 8120 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7980 1350 50  0001 C CNN
-F 3 "~" H 8050 1350 50  0001 C CNN
-	1    8050 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0121
-U 1 1 5DE79FDC
-P 8150 950
-F 0 "#PWR0121" H 8150 800 50  0001 C CNN
-F 1 "+5V" H 8165 1123 50  0000 C CNN
-F 2 "" H 8150 950 50  0001 C CNN
-F 3 "" H 8150 950 50  0001 C CNN
-	1    8150 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 950  8150 1000
-Wire Wire Line
-	8150 1000 8200 1000
-Text Notes 8300 1650 0    50   ~ 0
-If = (5-1.4)/330 -> 11mA
-Wire Wire Line
-	4650 1250 4500 1250
-Wire Wire Line
-	4500 1250 4500 1150
-$Comp
-L power:+VSW #PWR0127
-U 1 1 5DEAB153
-P 4500 1150
-F 0 "#PWR0127" H 4500 1000 50  0001 C CNN
-F 1 "+VSW" H 4515 1323 50  0000 C CNN
-F 2 "" H 4500 1150 50  0001 C CNN
-F 3 "" H 4500 1150 50  0001 C CNN
-	1    4500 1150
-	-1   0    0    -1  
-$EndComp
-Text Label 6750 1350 0    50   ~ 0
-~CLOSE
-Wire Wire Line
-	7200 1350 6750 1350
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5DE96F36
@@ -289,148 +150,6 @@ F 2 "Module:Arduino_Nano" H 6950 3300 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6800 3250 50  0001 C CNN
 	1    6800 4250
 	1    0    0    -1  
-$EndComp
-$Comp
-L Anderson_Powerpole:Anderson_PP45_Power_RA J2
-U 1 1 5DF0FB3D
-P 10500 700
-F 0 "J2" H 10550 750 50  0000 C CNN
-F 1 "Anderson_PP45_Power_RA" H 10400 350 50  0000 C CNN
-F 2 "Anderson_Powerpole:Anderson_Powerpole-45A-RA-Bottom-Pair" H 10850 300 50  0001 C CNN
-F 3 "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf" H 10900 1100 50  0001 C CNN
-	1    10500 700 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Anderson_Powerpole:Anderson_PP45_Power_RA J3
-U 1 1 5DF12FBE
-P 1500 1050
-F 0 "J3" H 1550 1100 50  0000 C CNN
-F 1 "Anderson_PP45_Power_RA" H 1400 700 50  0000 C CNN
-F 2 "Anderson_Powerpole:Anderson_Powerpole-45A-RA-Bottom-Pair" H 1850 650 50  0001 C CNN
-F 3 "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf" H 1900 1450 50  0001 C CNN
-	1    1500 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Anderson_Powerpole:Anderson_PP45_Staple_Nx2 M1
-U 1 1 5DF16B07
-P 10800 1300
-F 0 "M1" H 10900 1346 50  0000 L CNN
-F 1 "Anderson_PP45_Staple_Nx2" H 10900 1255 50  0001 L CNN
-F 2 "Anderson_Powerpole:Anderson_Powerpole-staple-Nx2" H 10800 1400 50  0001 C CNN
-F 3 "" H 10800 1400 50  0001 C CNN
-	1    10800 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Anderson_Powerpole:Anderson_PP45_Staple_Nx2 M2
-U 1 1 5DF1D0C8
-P 1750 1700
-F 0 "M2" H 1850 1746 50  0000 L CNN
-F 1 "Anderson_PP45_Staple_Nx2" H 1850 1655 50  0000 L CNN
-F 2 "Anderson_Powerpole:Anderson_Powerpole-staple-Nx2" H 1750 1800 50  0001 C CNN
-F 3 "" H 1750 1800 50  0001 C CNN
-	1    1750 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 1250 5100 1450
-Connection ~ 5100 1250
-Wire Wire Line
-	4850 1250 5100 1250
-Wire Wire Line
-	5700 1300 5700 1450
-Connection ~ 5700 1300
-Wire Wire Line
-	5900 1300 5700 1300
-Wire Wire Line
-	5900 1150 5900 1300
-$Comp
-L power:+BATT #PWR0126
-U 1 1 5DEA678C
-P 5900 1150
-F 0 "#PWR0126" H 5900 1000 50  0001 C CNN
-F 1 "+BATT" H 5915 1323 50  0000 C CNN
-F 2 "" H 5900 1150 50  0001 C CNN
-F 3 "" H 5900 1150 50  0001 C CNN
-	1    5900 1150
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 1450 5250 1450
-Wire Wire Line
-	5100 1100 5100 1250
-Wire Wire Line
-	5250 1100 5100 1100
-Wire Wire Line
-	5700 1450 5550 1450
-Wire Wire Line
-	5700 1100 5700 1300
-Wire Wire Line
-	5550 1100 5700 1100
-$Comp
-L Device:R R8
-U 1 1 5DE9E4A2
-P 5400 1450
-F 0 "R8" V 5193 1450 50  0000 C CNN
-F 1 "470R 5W" V 5284 1450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 5330 1450 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 5400 1450 50  0001 C CNN
-	1    5400 1450
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5DE9C7FD
-P 5400 1100
-F 0 "R7" V 5193 1100 50  0000 C CNN
-F 1 "470R 5W" V 5284 1100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm" V 5330 1100 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-passive-product/EP5WS470RJ/A131375CT-ND/4489293" H 5400 1100 50  0001 C CNN
-	1    5400 1100
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	5150 1850 5700 1850
-Text Label 5250 1850 0    50   ~ 0
-~PRECHARGE
-$Comp
-L Device:R R9
-U 1 1 5DEADCE7
-P 5000 1850
-F 0 "R9" H 5070 1896 50  0000 L CNN
-F 1 "330R" H 5070 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4930 1850 50  0001 C CNN
-F 3 "~" H 5000 1850 50  0001 C CNN
-	1    5000 1850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 1900 4650 1850
-Wire Wire Line
-	4450 1900 4650 1900
-$Comp
-L power:+5V #PWR0128
-U 1 1 5DFAF7E7
-P 4450 1900
-F 0 "#PWR0128" H 4450 1750 50  0001 C CNN
-F 1 "+5V" H 4465 2073 50  0000 C CNN
-F 2 "" H 4450 1900 50  0001 C CNN
-F 3 "" H 4450 1900 50  0001 C CNN
-	1    4450 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Precharger_Lib:CPC1004N U4
-U 1 1 5DE665A5
-P 4750 1550
-F 0 "U4" V 4796 1370 50  0000 R CNN
-F 1 "CPC1004N" V 4705 1370 50  0000 R CNN
-F 2 "Precharger:SOP-4_3.8x4.1mm_P2.54mm_CPC1004N" H 4550 1350 50  0001 L CIN
-F 3 "http://www.ixysic.com/home/pdfs.nsf/www/CPC1004N.pdf/$file/CPC1004N.pdf" H 4700 1550 50  0001 L CNN
-	1    4750 1550
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0132
@@ -602,8 +321,6 @@ Text Label 5450 3850 0    50   ~ 0
 AUX_12V_ENA
 Wire Wire Line
 	5450 3850 6300 3850
-Text Notes 4350 850  0    50   ~ 0
-Only blocks in one direction! Update SCH symbol
 Text Label 5850 3950 0    50   ~ 0
 PWM_ENA
 Wire Wire Line
@@ -705,17 +422,6 @@ PWM_ENA
 Wire Wire Line
 	4250 4400 3800 4400
 $Comp
-L 74xGxx:74LVC1G125 U?
-U 1 1 5E04940A
-P 7500 1350
-F 0 "U?" H 7300 1150 50  0000 C CNN
-F 1 "74LVC1G125" H 7450 1050 50  0000 C CNN
-F 2 "" H 7500 1350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7500 1350 50  0001 C CNN
-	1    7500 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xGxx:74LVC1G14 U?
 U 1 1 5E04B0DA
 P 1950 4400
@@ -780,85 +486,8 @@ F 3 "" H 1650 4100 50  0001 C CNN
 	1    1650 4100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5E06ED0E
-P 7600 1300
-F 0 "#PWR?" H 7600 1150 50  0001 C CNN
-F 1 "+5V" H 7615 1473 50  0000 C CNN
-F 2 "" H 7600 1300 50  0001 C CNN
-F 3 "" H 7600 1300 50  0001 C CNN
-	1    7600 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 1300 7600 1300
-$Comp
-L power:GND #PWR?
-U 1 1 5E0745BF
-P 7550 1400
-F 0 "#PWR?" H 7550 1150 50  0001 C CNN
-F 1 "GND" H 7555 1227 50  0000 C CNN
-F 2 "" H 7550 1400 50  0001 C CNN
-F 3 "" H 7550 1400 50  0001 C CNN
-	1    7550 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7500 1150 7500 1050
-Wire Wire Line
-	7500 1050 7800 1050
-Text Label 7500 1050 0    50   ~ 0
-~ENABLE
-Wire Wire Line
-	9400 1350 9550 1350
-Wire Wire Line
-	9000 1350 9050 1350
-Connection ~ 9400 1350
-$Comp
-L Device:C C?
-U 1 1 5E0B0570
-P 9050 1200
-F 0 "C?" H 9165 1246 50  0000 L CNN
-F 1 "1nF" H 9165 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9088 1050 50  0001 C CNN
-F 3 "~" H 9050 1200 50  0001 C CNN
-	1    9050 1200
-	1    0    0    -1  
-$EndComp
-Connection ~ 9050 1350
-Wire Wire Line
-	9050 1350 9400 1350
-Wire Wire Line
-	9050 1000 9050 1050
-Connection ~ 9050 1000
-Wire Wire Line
-	9050 1000 9100 1000
-$Comp
-L Device:R R?
-U 1 1 5E0BA185
-P 7950 1150
-F 0 "R?" V 8000 1250 50  0000 L CNN
-F 1 "10k DNP" V 7850 1050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7880 1150 50  0001 C CNN
-F 3 "~" H 7950 1150 50  0001 C CNN
-	1    7950 1150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7750 1350 7900 1350
-Wire Wire Line
-	7800 1150 7750 1150
-Wire Wire Line
-	7750 1150 7750 1350
-Connection ~ 7750 1350
-Wire Wire Line
-	8100 1150 8200 1150
-Wire Wire Line
-	8200 1150 8200 1000
-Connection ~ 8200 1000
 $Sheet
-S 8150 2100 1050 950 
+S 9000 5150 1050 950 
 U 5E0E09D1
 F0 "Aux_12V" 50
 F1 "Aux_12V.sch" 50
@@ -878,17 +507,17 @@ F 3 "~" H 4400 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 5500 4250 5500
-Text HLabel 8150 2400 2    50   Input ~ 0
+Text HLabel 9000 5500 2    50   Input ~ 0
 AUX_12V_ENA
-Text HLabel 8150 2250 2    50   Input ~ 0
+Text HLabel 9000 5350 2    50   Input ~ 0
 Vin
-Text HLabel 8150 2550 2    50   Input ~ 0
+Text HLabel 9000 5650 2    50   Input ~ 0
 GND
 $Sheet
-S 900  2050 700  600 
+S 750  2900 700  600 
 U 5E04D7BE
-F0 "5V_Supply" 50
-F1 "5V_Supply.sch" 50
+F0 "Power_Supply" 50
+F1 "Power_Supply.sch" 50
 $EndSheet
 $Sheet
 S 1100 6400 950  1000
@@ -897,9 +526,15 @@ F0 "Voltage_Sensing" 50
 F1 "Voltage_Sensing.sch" 50
 $EndSheet
 $Sheet
-S 5100 6200 950  850 
+S 2550 6500 950  850 
 U 5E06ED59
 F0 "Isolated Communication Port" 50
 F1 "Iso_Communication.sch" 50
+$EndSheet
+$Sheet
+S 3750 1150 1150 1200
+U 5E075EEE
+F0 "Power and Precharging" 50
+F1 "Power_Precharge.sch" 50
 $EndSheet
 $EndSCHEMATC
